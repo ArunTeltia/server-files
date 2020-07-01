@@ -191,6 +191,18 @@
             margin-left: 20px;
         }
 
+        .back-to-register {
+            background: rgb(0, 128, 128);
+            color: white;
+            /* text-decoration-color: white; */
+            font-size: 15px;
+            line-height: 1;
+            padding: 6px 6px 6px 6px;
+            text-decoration: none;
+            transition: all 0.2s;
+            border-radius: 6px;
+        }
+
         @media (max-width: 600px) {
             .big-card {
                 height: 300px;
@@ -233,9 +245,13 @@
 
     <center>
         <center>
-            <div style="margin-top: 200px;" class="headings">
+            <div style="margin-top: 110px;" class="headings">
                 <h1 style="color:#0000CD">Select the olympiads you want to participate for</h1>
-
+                <div class="goback-div" style="margin-bottom: 10px;">
+                    <button class="back-to-register"><i class="fas fa-arrow-left" style="margin-right:10px;"></i><a
+                            style="color:beige;" href="/register.html">Back To
+                            Register</a></button>
+                </div>
             </div>
         </center>
         <div style=" display:flex;" class="big-card">
