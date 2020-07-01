@@ -53,11 +53,6 @@
             background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
         }
 
-        #wrapper {
-            width: 600px;
-            margin: 0 auto;
-            /* margin-top: 15%; */
-        }
 
         h1 {
             color: #EEE;
@@ -75,13 +70,13 @@
             border-bottom: 5px solid rgba(26, 188, 156, 0.3);
         }
 
-        h3 {
+        /* h3 {
             width: 570px;
             margin-left: 16px;
             font-family: "Lato", sans-serif;
             font-weight: 600;
             color: #EEE;
-        }
+        } */
 
 
 
@@ -164,26 +159,6 @@
             color: red;
         }
 
-
-        @media (max-width: 900px) {
-            .big-card {
-                height: 350px;
-                width: 600px;
-            }
-
-            .card-button {
-                width: 140px;
-                border-radius: 20px;
-                font-size: 10px;
-                background-color: white;
-                color: green;
-            }
-
-            .div-button {
-                margin-top: 10px;
-            }
-        }
-
         a.button {
             display: block;
             position: relative;
@@ -212,9 +187,13 @@
             color: white;
         }
 
+        .bottom-h5 {
+            margin-left: 20px;
+        }
+
         @media (max-width: 600px) {
             .big-card {
-                height: 200px;
+                height: 300px;
                 width: 310px;
             }
 
@@ -229,6 +208,19 @@
             .div-button {
                 margin-top: 10px;
             }
+
+            label {
+                font-size: 25px;
+            }
+
+            h3 {
+                size: 8px;
+            }
+
+            .bottom-h5 {
+                margin-left: 0px;
+
+            }
         }
     </style>
 
@@ -242,8 +234,8 @@
     <center>
         <center>
             <div style="margin-top: 200px;" class="headings">
-                <h1 style="color:#0000CD">Which Olympiad you want</h1>
-                <h1 style="color:#0000CD">to fill</h1>
+                <h1 style="color:#0000CD">Select the olympiads you want to participate for</h1>
+
             </div>
         </center>
         <div style=" display:flex;" class="big-card">
@@ -270,10 +262,12 @@
 
         </div>
         <a href="" onClick="myFunc()" title="Click to Pay" class="submit-button button btnPush btnPurple">Next</a>
-        <div>
-            <h3>Participate in one for 99 and both for just 179</h3>
-        </div>
     </center>
+    <div>
+        <h5 class="bottom-h5">Participate in one for 99 and both for just 179</h5>
+
+    </div>
+
     <div id="footer1"></div>
     <script>
 
@@ -285,9 +279,9 @@
             if (cb1 && cb2) {
                 button.href = "https://rzp.io/l/sfolyFG";
             } else if (cb1) {
-                button.href = "https://rzp.io/l/sfolyF";
-            } else if (cb2) {
                 button.href = "https://rzp.io/l/sfolyG";
+            } else if (cb2) {
+                button.href = "https://rzp.io/l/sfolyF";
             }
         }
     </script>
