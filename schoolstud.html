@@ -147,10 +147,12 @@
 
         input[type=checkbox]:checked~.check {
             border: 5px solid #0DFF92;
+
         }
 
         input[type=checkbox]:checked~.check::before {
             background: #0DFF92;
+            transition: background 2s ease-in;
         }
 
         input[type=checkbox]:checked~label {
@@ -202,15 +204,15 @@
         }
 
         .btnPurple {
-            background: #A74982;
+            background: blue;
         }
 
         .btnPurple.btnPush {
-            box-shadow: 0px 5px 0px 0px #6D184B;
+            box-shadow: 0px 5px 0px 0px #2a186d;
         }
 
         .btnPurple.btnPush:hover {
-            box-shadow: 0px 0px 0px 0px #6D184B;
+            box-shadow: 0px 0px 0px 0px #2a186d;
             color: white;
         }
 
@@ -248,9 +250,9 @@
                 <h1 style="color:#0000CD">to fill</h1>
             </div>
         </center>
-        <div style=" margin-bottom: 110px; display:flex;" class="big-card">
+        <div style=" margin-bottom: 30px; display:flex;" class="big-card">
 
-            <div class="cardd" style="width:33%">
+            <div class="cardd" style="width:33.33%">
                 <div class="div-image">
                     <img class="imagess" src="./Icons/chemistry.svg"></img>
                 </div>
@@ -262,7 +264,7 @@
 
             </div>
 
-            <div class="cardd" style="width:33%">
+            <div class="cardd" style="width:33.33%">
                 <div class="div-image">
                     <img class="imagess1" src="./Icons/Maths.svg"></img>
                 </div>
@@ -271,13 +273,13 @@
                 <label for="f-option">SIMO</label>
 
 
-                <a href="" onClick="myFunc()" title="Button push purple"
-                    class="submit-button button btnPush btnPurple">Submit</a>
+                <a href="" onClick="myFunc()" title="Click to Pay"
+                    class="submit-button button btnPush btnPurple">Next</a>
 
 
             </div>
 
-            <div class="cardd" style="width:33%">
+            <div class="cardd" style="width:33.33%">
                 <div class="div-image">
                     <img class="imagess1" src="./Icons/English.svg"></img>
                 </div>
@@ -288,6 +290,9 @@
 
 
             </div>
+        </div>
+        <div>
+            <h3>Participate in any 1 Olympiad for 99,2 for 179 and all 3 for just 249</h3>
         </div>
     </center>
     <div id="footer1"></div>
